@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheem Steel Construction Company</title>
+
+    <!-- DATATABLES CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css"
+    />
+  </head>
+
+  <body style="margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden">
+    <div id="app" style="width: 100vw; height: 100vh"></div>
+
+    <!-- FIX: pdfMake must load BEFORE DataTables Buttons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
