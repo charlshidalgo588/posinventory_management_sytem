@@ -1,66 +1,85 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# POS & Inventory Management System (SIMS)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Overview
 
-## About Laravel
+The **Sheems Steel Construction Supply Sales and Inventory Management System (SIMS)** is a **web-based, full-stack application** developed as a **combined academic project** for:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **CSC 106 – Software Engineering**
+- **ITE 18 – Applications Development and Emerging Technologies**
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+at **Caraga State University (CSU)**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The project was **based on an existing open-source Laravel POS system** and was **significantly modified, extended, and restructured** to meet specific business requirements and academic objectives.  
+Major enhancements include **frontend modernization using Vue.js**, backend refactoring, and full system integration.
 
-## Learning Laravel
+## Business Problem
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Small retail and construction supply businesses often rely on **manual, paper-based processes** for sales and inventory tracking, which leads to:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Errors and inconsistencies
+- Operational inefficiencies
+- Lack of real-time business insights
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**SIMS addresses these issues** by providing:
 
-## Laravel Sponsors
+- Automated POS transactions
+- Real-time inventory updates
+- Centralized sales and inventory reporting
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## System Features
 
-### Premium Partners
+- Product, category, and supplier management
+- Point-of-Sale (POS) transaction processing
+- Automatic inventory deduction per sale
+- Inventory activity logs (audit trail)
+- Sales and inventory reports
+- Dashboard with key business metrics
+- Secure user authentication
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## System Architecture
 
-## Contributing
+The system follows a **client–server architecture**:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Frontend:** Vue.js Single Page Application (migrated from Laravel Blade templates)
+- **Backend:** Laravel RESTful API
+- **Database:** MySQL
+- **Authentication:** Laravel Sanctum
 
-## Code of Conduct
+The frontend communicates with the backend through **RESTful API endpoints**, enabling improved **modularity, maintainability, and user experience**.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Technologies Used
 
-## Security Vulnerabilities
+- **Frontend:** Vue.js, Axios, Bootstrap / Tailwind CSS
+- **Backend:** Laravel (PHP), Laravel Sanctum
+- **Database:** MySQL
+- **Tools:** VS Code, Composer, npm
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## My Role & Contributions
 
-## License
+My contributions to this project include:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Analyzing system requirements and identifying functional gaps
+- Migrating the frontend from Laravel Blade templates to a **Vue.js SPA**
+- Integrating Vue.js with Laravel API endpoints
+- Modifying backend logic to support POS and inventory workflows
+- Implementing and validating inventory consistency
+- Testing, debugging, and documenting the system
+
+This project demonstrates my ability to **understand, adapt, and improve existing systems**, a common requirement in real-world software development.
+
+## Documentation
+
+Detailed system documentation, diagrams, and screenshots are available in the **`/docs`** folder.
+
+## Future Improvements
+
+- Role-based access control (multi-user support)
+- Advanced analytics and reporting dashboards
+- Mobile application support
+- Barcode scanner integration
+
+## Academic Context & Attribution
+
+This project was developed for **academic and demonstration purposes** at **Caraga State University**.
+
+The initial codebase was sourced from an **open-source Laravel POS project** and was **extensively modified and enhanced** to meet project requirements.
